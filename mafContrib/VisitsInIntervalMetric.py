@@ -31,7 +31,7 @@ class VisitsInIntervalMetric(metrics.BaseMetric):
                  timeCol='expMJD',
                  metricName='VisitsInInterval', **kwargs):
 
-        units = 'days'
+        units = 'boolean'
         assert (minVisits >= 2)
         assert (nPairs >= 0)
         assert (minPairGap >= 0.)
